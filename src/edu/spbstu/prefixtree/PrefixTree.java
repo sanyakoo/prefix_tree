@@ -134,7 +134,6 @@ public class PrefixTree {
         prefixTree.add("issue");
         prefixTree.add("can");
         prefixTree.add("cat");
-        prefixTree.add("cannabis");
         prefixTree.add("canada");
         prefixTree.add("cant");
         prefixTree.add("volume");
