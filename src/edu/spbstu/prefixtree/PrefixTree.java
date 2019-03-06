@@ -111,9 +111,6 @@ public class PrefixTree {
 
     /**
      * BFS, fills result list with found strings
-     * @param prefix
-     * @param curNode
-     * @param result
      */
     private void findFromNode(String prefix, Node curNode, List<String> result) {
         if (curNode.getMarker() != 0) {
