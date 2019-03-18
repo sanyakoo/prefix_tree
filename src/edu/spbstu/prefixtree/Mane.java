@@ -12,7 +12,7 @@ public class Mane {
         prefixTree.add("issue");
         prefixTree.add("can");
         prefixTree.add("cat");
-        prefixTree.add("canada");
+        prefixTree.add("canadian");
         prefixTree.add("cant");
         prefixTree.add("volume");
         prefixTree.add("value");
