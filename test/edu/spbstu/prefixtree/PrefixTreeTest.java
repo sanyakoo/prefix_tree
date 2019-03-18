@@ -55,10 +55,10 @@ public class PrefixTreeTest {
         prefixTree.add("memes");
         prefixTree.add("memory");
         prefixTree.add("corn");
-        assertEquals(false, prefixTree.findStr("memo"));
-        assertEquals(false, prefixTree.findStr("core"));
-        assertEquals(true, prefixTree.findStr("high"));
-        assertEquals(false, prefixTree.findStr("highestr"));
+        assertFalse(prefixTree.findStr("memo"));
+        assertFalse(prefixTree.findStr("core"));
+        assertTrue(prefixTree.findStr("high"));
+        assertFalse(prefixTree.findStr("highestr"));
     }
 
     @Test
