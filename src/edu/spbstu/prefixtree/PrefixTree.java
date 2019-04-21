@@ -62,8 +62,7 @@ public class PrefixTree {
     public List<String> findAllWithPrefix(String prefix) {
         List<String> result = new ArrayList<>();
         Node curNode = root;
-        for (int i = 0; i < prefix.length(); i++) {
-            char ch = prefix.charAt(i);
+        for (char ch: prefix.toCharArray()) {
             Node node = curNode.getMap().get(ch);
             if (node == null) {
                 return result;
