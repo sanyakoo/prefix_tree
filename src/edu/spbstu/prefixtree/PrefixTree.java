@@ -34,6 +34,12 @@ public class PrefixTree {
         public void setMap(Map<Character, Node> map) {
             this.map = map;
         }
+        public void putInChildren(Character ch, Node node) {
+            getMap().put(ch, node);
+        }
+        public Node getChild(Character ch) {
+            return getMap().get(ch);
+        }
     }
 
     private Node root = new Node(null);
@@ -46,7 +52,7 @@ public class PrefixTree {
             Node node = curNode.getMap().get(ch);
             if (node == null) {
                 node = new Node(curNode);
-                curNode.getMap().put(ch, node);
+                curNode.putInChildren(ch, node);
             }
             curNode = node;
         }
